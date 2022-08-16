@@ -1,0 +1,286 @@
+:root {
+    --fonte-principal: "Inter";
+    --branco: #FFFFFF;
+    --preto: #101828;
+    --cinza: #667085;
+    --vermelho: #8E2424;
+    --cinza-secundario: #98A2B3;
+    --cinza-rodape: #F9FAFB;
+    --cinza-borda: #EAECF0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    height: 100vh;
+}
+
+.menu {
+    display: flex;
+    padding: 1.5em 3em;  
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+}
+
+.lista-menu {
+    display: flex;
+    margin-left: 10em;
+    margin-right: 15em;
+}
+
+.lista-menu__link {
+   padding: 0.5em;
+   text-decoration: none;
+   color: var(--cinza);
+}
+
+.botões-menu {
+    display: flex;
+    align-items: center;
+    margin-left: 10em;
+}
+
+.botão-entrar, .botão-cadastrar {
+    text-decoration: none;
+    padding: 0.5em;
+    color: var(--cinza);
+    margin: 0.5em;
+}
+
+.botão-cadastrar {
+    color: var(--branco);
+    background: var(--vermelho);
+    border: 1px solid var(--vermelho);
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    padding: 0.7em;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0;
+    gap: 24px;
+    color: var(--cinza);
+}
+
+.título-secundario {
+    color: var(--vermelho);
+    font-weight: 600;
+    line-height: 24px;  
+}
+
+.título-principal {
+    color: var(--preto);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.02em;
+}
+
+.descrição-banner {
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 14em;
+}
+
+.metricas-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 2em;
+    gap: 2em;
+    margin: 0 3em;
+}
+
+.título-lista__metricas {
+    color: var(--vermelho);
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.2em;
+}
+
+.subtitulo-lista__metricas {
+    color: var(--preto);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.texto-metricas {
+    color: var(--cinza);
+    line-height: 24px;
+}
+
+.descrição-vagas {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 96px 0px;
+   gap: 24px;
+}
+
+.botão-vagas {
+    padding: 4px 12px;
+    background: rgba(142, 36, 36, 0.05);
+    border-radius: 16px;
+    font-weight: 500;
+    color: var(--vermelho);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.chamada-vagas {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    color: var(--preto);
+
+}
+
+.texto-vagas {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--cinza);
+    margin-bottom: 1.5em;
+}
+
+.lista-vagas {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    margin: 0 20em;
+}
+
+.titulo-area {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--preto);
+}
+
+.vaga {
+    box-sizing: border-box;
+    padding: 24px 24px 28px;
+    gap: 24px;
+    border: 1px solid var(--cinza-borda);
+    border-radius: 16px;
+}
+
+.titulo-vaga {
+    color: var(--preto);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.informacoes-vaga {
+    color: var(--cinza);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.informaçoes-vaga__horario {
+    margin-right: 2em;
+}
+
+.seção-depoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(196, 25, 25, 0.03);
+    border-radius: 16px;
+    margin: 5em 4.5em;
+}
+
+.titulo-depoimentos {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--vermelho);
+    padding: 2em;
+    margin-top: 2em;
+}
+
+.texto-depoimentos {
+    font-weight: 500;
+    font-size: 36px;
+    color: var(--preto);
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.nome-colaborador {
+    font-weight: 500;
+    color: var(--preto);
+    margin: 1em 0;
+}
+
+.cargo-colaborador {
+    font-size: 14px;
+    color: var(--cinza);
+    margin-bottom: 5em;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0px;
+    background: var(--cinza-rodape);
+}
+
+.titulo-rodape {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 0.5em;
+}
+
+.texto-rodape {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--cinza);
+    margin-bottom: 1.8em;
+}
+
+.cadastrar-email {
+    padding: 0.8em 12em 0.8em 0.8em ;
+    background: var(--branco);
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    margin-right: 0.6em;
+}
+
+.botão-cadastrar__rodape {
+    padding: 0.5em;
+    color: var(--branco);
+    text-decoration: none;
+    background: var(--vermelho);
+    border: 1px solid var(--vermelho);
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+}
+
+.copyright-rodape {
+    color: var(--cinza-secundario);
+    margin-top: 1.5em;
+    font-size: 15px;
+}
